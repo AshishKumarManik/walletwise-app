@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-theme-bg: var(--bg-color);
+  --color-theme-card: var(--card-color);
+  --color-theme-border: var(--border-color);
+  --color-theme-text: var(--text-main);
+  --color-theme-muted: var(--text-muted);
+  --color-theme-accent: var(--accent-color);
+}
+
+:root {
+  /* LIGHT MODE (Cream Background, Maroon Accent, Dark Text) */
+  --bg-color: #FDFBF7; /* Soft cream background */
+  --card-color: #F4EFE6; /* Slightly darker cream for cards */
+  --border-color: #c3c3e3; /* Muted tan/cream for borders */
+  --text-main: #2D0A11; /* Very dark, near-black maroon for high contrast text */
+  --text-muted: #754E55; /* Muted maroon-grey for secondary text */
+  --accent-color: #7C1828; /* Rich, deep maroon for buttons and highlights */
+}
+
+.dark {
+  /* DARK MODE (Maroon Background, Cream Accent) */
+  --bg-color: #2D0A11; /* Very dark maroon background */
+  --card-color: #4A1523; /* Lighter maroon for cards */
+  --border-color: #7C1828; /* Rich maroon for borders */
+  --text-main: #FDFBF7; /* Cream text for readability */
+  --text-muted: #C4B19F; /* Dimmed cream for secondary text */
+  --accent-color: #E8DCC8; /* Soft cream accent to pop against the dark maroon */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
