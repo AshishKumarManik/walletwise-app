@@ -7,7 +7,7 @@ import * as XLSX from 'xlsx';
 const COLORS = ['#7C1828', '#9B2236', '#B83B4E', '#C48B8B', '#D1BFA5', '#E3D8C3'];
 const CATEGORIES = ['Food', 'Travel', 'Fuel', 'Grocery', 'Recharge', 'Other'];
 const PAYMENT_MODES = ['UPI', 'Card', 'Cash'];
-const API_URL = 'http://localhost:5000/api/expenses';
+const API_URL = 'https://walletwise-app.onrender.com';
 
 const formatDate = (dateStr) => {
   if (!dateStr) return '-';
