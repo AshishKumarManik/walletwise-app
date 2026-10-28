@@ -1,21 +1,36 @@
-<<<<<<< HEAD
-# React + Vite
+# WalletWise 🚂💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Offline-First Progressive Web App (PWA) engineered for seamless financial tracking in low-network environments. 
 
-Currently, two official plugins are available:
+Originally architected to manage budget and itineraries for a 120-day solo rail journey across all 28 states of India, WalletWise ensures zero data loss when cellular networks drop. It utilizes a local-storage-first approach, instantly capturing data on the device and performing a bulk background sync to MongoDB the moment internet connectivity is restored.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Core Features
 
-## React Compiler
+*   **Offline-First Architecture:** Complete offline functionality. UI indicators (Spinning, Green Cloud, Red Offline) visually track the live sync status with the backend.
+*   **Trip & Itinerary Isolation:** Group expenses by specific trips. Features visual budget consumption bars and a dedicated toggle for professional field/audit trips.
+*   **OCR Receipt Scanning:** Integrated `tesseract.js` automatically extracts the highest monetary value from photos of physical bills.
+*   **GPS Location Tagging:** Fetches exact geographic coordinates and reverse-geocodes them to append `[City, State]` tags to transaction notes.
+*   **Advanced Analytics:** Interactive Recharts pie charts for category breakdowns and month-over-month bar chart comparisons.
+*   **PWA Ready:** Fully installable on Android and iOS home screens for a native, full-screen mobile experience.
+*   **Instant Export:** Generate complete `.xlsx` spreadsheet reports or share formatted text summaries instantly via WhatsApp and Email.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:**
+*   React.js (Vite)
+*   Tailwind CSS & Lucide Icons (UI/UX)
+*   Recharts (Data Visualization)
+*   Tesseract.js (Optical Character Recognition)
+*   SheetJS / XLSX (Data Export)
+*   Vite PWA Plugin
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# walletwise-app
-This is a full-stack Progressive Web App (PWA) built for personal finance, extended travel itineraries, and professional field audits. It features AI-powered receipt scanning, GPS location tagging, and dedicated trip budget management.
->>>>>>> 7fae7780390ea95554c08125d44af03ddc3150eb
+**Backend:**
+*   Node.js & Express.js
+*   MongoDB Atlas (Mongoose)
+*   CORS & dotenv
+
+## 🚀 Local Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/AshishKumarManik/walletwise-app.git](https://github.com/AshishKumarManik/walletwise-app.git)
